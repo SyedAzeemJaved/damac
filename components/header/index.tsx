@@ -1,43 +1,55 @@
-'use server'
-
 import Image from 'next/image'
+
+import MobileMenu from './MobileMenu'
 
 import type { ReactElement } from 'react'
 
 const Header = (): ReactElement => {
   return (
-    <div className="absolute z-10 flex h-32 w-full items-center justify-between bg-transparent px-32 text-white">
-      <Image src="/damac-logo-white.webp" width={150} height={150} alt="logo" />
-      <div className="flex items-center gap-6 font-semibold">
-        <span>Our Story</span>
-        <span>Policies</span>
-        <span>Self service</span>
-        <span>Benefits and perks</span>
-        <span>Life at DAMAC</span>
-      </div>
-      <div className="flex items-center gap-6">
+    <header className="absolute z-10 w-full bg-black text-white lg:bg-transparent">
+      <div className="flex items-center justify-between p-4 lg:px-32 lg:py-8">
         <Image
-          src="/logo/search-icon-bold.svg"
-          width={28}
-          height={28}
-          alt="search-icon"
+          src="/damac-logo-white.webp"
+          width={100}
+          height={100}
+          alt="Damac Logo"
+          className="w-24 lg:w-32"
         />
-        <div className="flex items-center gap-4">
-          <div className="relative h-10 w-10 rounded-full bg-black">
-            <Image
-              src="/other/avatar.png"
-              alt="avatar"
-              className="rounded-full object-cover"
-              fill
-            />
+
+        <div className="hidden items-center gap-6 text-xs font-semibold lg:flex">
+          <span>Our Story</span>
+          <span>Policies</span>
+          <span>Self service</span>
+          <span>Benefits and perks</span>
+          <span>Life at DAMAC</span>
+        </div>
+
+        <div className="flex items-center gap-4 lg:gap-6">
+          <Image
+            src="/logo/search-icon-bold.svg"
+            width={24}
+            height={24}
+            alt="search-icon"
+            className="h-6 w-6 lg:h-7 lg:w-7"
+          />
+          <div className="hidden items-center gap-4 sm:flex">
+            <div className="relative h-8 w-8 rounded-full bg-black lg:h-10 lg:w-10">
+              <Image
+                src="/other/avatar.png"
+                alt="avatar"
+                className="rounded-full object-cover"
+                fill
+              />
+            </div>
+            <div className="hidden flex-col text-xs md:flex lg:text-sm">
+              <span className="font-semibold">Muhammad Khalid</span>
+              <span className="font-light">Technical Web Lead</span>
+            </div>
           </div>
-          <div className="flex flex-col text-sm">
-            <span className="font-semibold">Muhammad Khalid</span>
-            <span className="font-light">Technical Web Lead</span>
-          </div>
+          <MobileMenu />
         </div>
       </div>
-    </div>
+    </header>
   )
 }
 
