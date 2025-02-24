@@ -6,7 +6,7 @@ import type { ReactElement } from 'react'
 
 const Header = (): ReactElement => {
   return (
-    <div className="w-full absolute h-32 bg-transparent flex items-center z-10 px-32 justify-between text-white">
+    <div className="absolute z-10 flex h-32 w-full items-center justify-between bg-transparent px-32 text-white">
       <Image src="/damac-logo-white.webp" width={150} height={150} alt="logo" />
       <div className="flex items-center gap-6 font-semibold">
         <span>Our Story</span>
@@ -22,8 +22,8 @@ const Header = (): ReactElement => {
           height={28}
           alt="search-icon"
         />
-        <div className="flex gap-4 items-center">
-          <div className="w-10 h-10 rounded-full bg-black relative">
+        <div className="flex items-center gap-4">
+          <div className="relative h-10 w-10 rounded-full bg-black">
             <Image
               src="/other/avatar.png"
               alt="avatar"

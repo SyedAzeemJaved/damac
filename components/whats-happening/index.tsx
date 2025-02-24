@@ -4,7 +4,7 @@ import type { ReactElement } from 'react'
 
 const WhatsHappening = (): ReactElement => {
   return (
-    <div className="w-full h-full bg-white text-black z-10 font-semibold mt-40">
+    <div className="z-10 mt-40 h-full w-full bg-white font-semibold text-black">
       Whats happeing
     </div>
   )

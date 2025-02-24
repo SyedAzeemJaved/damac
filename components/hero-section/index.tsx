@@ -9,9 +9,9 @@ import Card from './card'
 
 const HeroSection = (): ReactElement => {
   return (
-    <div className="w-full h-full bg-black relative text-white -mt-2">
-      <div className="w-full h-full flex items-center absolute flex-col z-30 justify-center gap-4 px-32">
-        <h1 className="uppercase font-black tracking-[0.4em]">
+    <div className="relative -mt-2 h-full w-full bg-black text-white">
+      <div className="absolute z-30 flex h-full w-full flex-col items-center justify-center gap-4 px-32">
+        <h1 className="font-black uppercase tracking-[0.4em]">
           hello Mohammad Khalid
         </h1>
         <Image
@@ -23,7 +23,7 @@ const HeroSection = (): ReactElement => {
         <h2 className="text-base font-medium">
           Our commitment to nurture every single member of Damac
         </h2>
-        <div className="w-full flex items-center gap-4 justify-center pt-10">
+        <div className="flex w-full items-center justify-center gap-4 pt-10">
           <Card
             src="/other/actor-2.png"
             alt="actor-2"

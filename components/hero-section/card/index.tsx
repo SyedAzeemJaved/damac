@@ -7,11 +7,11 @@ import type { Props } from './types'
 
 const Card = ({ src, alt, title, br }: Props): ReactElement => {
   return (
-    <div className="w-96 h-96 rounded-2xl bg-white relative">
+    <div className="relative h-96 w-96 rounded-2xl bg-white">
       <Image src={src} alt={alt} className="rounded-2xl object-cover" fill />
-      <div className="absolute w-full h-full justify-end p-10 flex flex-col bg-gradient-to-t from-black/80 rounded-b-2xl">
-        <div className="w-full flex items-center justify-between">
-          <span className="font-bold text-white text-2xl">
+      <div className="absolute flex h-full w-full flex-col justify-end rounded-b-2xl bg-gradient-to-t from-black/80 p-10">
+        <div className="flex w-full items-center justify-between">
+          <span className="text-2xl font-bold text-white">
             {title} <br /> {br}
           </span>
           <Image

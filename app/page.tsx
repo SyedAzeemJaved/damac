@@ -4,12 +4,12 @@ import Header from '@components/header'
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen">
+    <div className="h-screen w-screen">
       <Header />
       <HeroSection />
-      <div className="w-full bg- absolute z-20 rounded-t-2xl pt-20 -bottom-20 h-60 bg-gradient-to-t from-white" />
-      <div className="w-full bg- absolute z-20 pt-20 -bottom-20 h-20 bg-white rounded-t-full blur-xl" />
-      <div className="w-full bg- absolute z-20 rounded-t-2xl pt-20 -bottom-20 h-60 bg-gradient-to-t from-white" />
+      {/* <div className="bg- absolute -bottom-20 z-20 h-60 w-full rounded-t-2xl bg-gradient-to-t from-white pt-20" />
+      <div className="bg- absolute -bottom-20 z-20 h-20 w-full rounded-t-full bg-white pt-20 blur-xl" />
+      <div className="bg- absolute -bottom-20 z-20 h-60 w-full rounded-t-2xl bg-gradient-to-t from-white pt-20" /> */}
       <WhatsHappening />
     </div>
   )
