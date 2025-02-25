@@ -22,8 +22,8 @@ const MobileMenu = (): ReactElement => {
           <div className="flex flex-col gap-4">
             <span>Our Story</span>
             <span>Policies</span>
-            <span>Self service</span>
-            <span>Benefits and perks</span>
+            <span>Self Service</span>
+            <span>Benefits and Perks</span>
             <span>Life at DAMAC</span>
           </div>
         </div>

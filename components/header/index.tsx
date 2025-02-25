@@ -2,13 +2,13 @@
 
 import Image from 'next/image'
 
-import MobileMenu from './MobileMenu'
+import MobileMenu from './mobile-menu'
 
 import type { ReactElement } from 'react'
 
 const Header = (): ReactElement => {
   return (
-    <header className="absolute z-20 w-full bg-black text-white lg:bg-transparent">
+    <header className="absolute z-30 w-full bg-black text-white lg:bg-transparent">
       <div className="flex items-center justify-between p-4 lg:px-32 lg:py-8">
         <Image
           src="/damac-logo-white.webp"
@@ -21,8 +21,8 @@ const Header = (): ReactElement => {
         <div className="hidden items-center gap-6 text-xs font-semibold lg:flex">
           <span>Our Story</span>
           <span>Policies</span>
-          <span>Self service</span>
-          <span>Benefits and perks</span>
+          <span>Self Service</span>
+          <span>Benefits and Perks</span>
           <span>Life at DAMAC</span>
         </div>
 
