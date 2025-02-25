@@ -11,10 +11,6 @@ const HeroSection = (): ReactElement => {
   return (
     <div className="relative h-full w-full bg-black text-white">
       <BackgroundVideo />
-      {/* Bottom blur */}
-      <div className="absolute -bottom-2 z-10 h-60 w-full rounded-t-2xl bg-gradient-to-t from-white pt-20" />
-      <div className="absolute -bottom-2 z-10 h-20 w-full rounded-t-full bg-white pt-20 blur-xl" />
-      <div className="absolute -bottom-2 z-10 h-60 w-full rounded-t-2xl bg-gradient-to-t from-white pt-20" />
 
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center p-4 md:p-8 lg:p-16 xl:p-32">
         <h1 className="mb-2 text-center text-xs font-black uppercase tracking-[0.2em] sm:mb-4 sm:text-sm sm:tracking-[0.3em] md:text-base md:tracking-[0.4em]">
