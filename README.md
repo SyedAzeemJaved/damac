@@ -1,4 +1,14 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Design clone for the shared Figma [file](https://www.figma.com/design/5hQ51iQmoqu3jwZBWuZtVq/Test?node-id=0-1&p=f&t=61O8JvIPHOft7Rds-0).
+
+Note: This is NOT complete as of now, work is still in process.
+
+## Tools and Technologies
+
+1. [Next.js](https://nextjs.org)
+2. [TailwindCSS](https://tailwindcss.com/)
+
+
+This is a  project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
