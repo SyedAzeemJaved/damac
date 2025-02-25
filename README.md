@@ -2,11 +2,14 @@
 
 Note: This is NOT complete as of now, work is still in process.
 
+## To note:
+
+1. No external libraries used for any component. 
+
 ## Tools and Technologies
 
 1. [Next.js](https://nextjs.org)
 2. [TailwindCSS](https://tailwindcss.com/)
-
 
 This is a  project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
