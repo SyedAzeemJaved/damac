@@ -3,27 +3,35 @@
 import Image from 'next/image'
 
 import BackgroundVideo from './background-video'
+import Card from './card'
 
 import type { ReactElement } from 'react'
-import Card from './card'
 
 const HeroSection = (): ReactElement => {
   return (
-    <div className="relative -mt-2 h-full w-full bg-black text-white">
-      <div className="absolute z-30 flex h-full w-full flex-col items-center justify-center gap-4 px-32">
-        <h1 className="font-black uppercase tracking-[0.4em]">
-          hello Mohammad Khalid
+    <div className="relative h-full w-full bg-black text-white">
+      <BackgroundVideo />
+      {/* Bottom blur */}
+      <div className="absolute -bottom-2 z-10 h-60 w-full rounded-t-2xl bg-gradient-to-t from-white pt-20" />
+      <div className="absolute -bottom-2 z-10 h-20 w-full rounded-t-full bg-white pt-20 blur-xl" />
+      <div className="absolute -bottom-2 z-10 h-60 w-full rounded-t-2xl bg-gradient-to-t from-white pt-20" />
+
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center p-4 md:p-8 lg:p-16 xl:p-32">
+        <h1 className="mb-2 text-center text-xs font-black uppercase tracking-[0.2em] sm:mb-4 sm:text-sm sm:tracking-[0.3em] md:text-base md:tracking-[0.4em]">
+          Hello Mohammad Khalid
         </h1>
         <Image
           src="/other/headline-main.svg"
           alt="headline"
           width={300}
           height={300}
+          className="w-4/5 max-w-[240px] sm:max-w-[280px] md:max-w-[300px]"
         />
-        <h2 className="text-base font-medium">
+        <h2 className="mt-2 px-4 text-center text-xs font-medium sm:mt-4 sm:px-8 sm:text-sm md:px-16 md:text-base">
           Our commitment to nurture every single member of Damac
         </h2>
-        <div className="flex w-full items-center justify-center gap-4 pt-10">
+
+        <div className="z-40 mt-6 grid w-full grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
           <Card
             src="/other/actor-2.png"
             alt="actor-2"
@@ -32,7 +40,7 @@ const HeroSection = (): ReactElement => {
           />
           <Card
             src="/other/actor-1.png"
-            alt="actor-2"
+            alt="actor-1"
             title="We Offer"
             br="Careers"
           />
@@ -45,7 +53,6 @@ const HeroSection = (): ReactElement => {
           />
         </div>
       </div>
-      <BackgroundVideo />
     </div>
   )
 }
